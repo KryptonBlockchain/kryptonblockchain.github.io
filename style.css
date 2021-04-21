@@ -1,0 +1,1561 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* Global Styles */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+  background-color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Grid */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+}
+
+.row {
+  clear: both;
+}
+
+/* Columns */
+.col {
+  float: left;
+  margin: 0 4% 0 0;
+  box-sizing: border-box;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.one.col {
+  width: 4.6666666667%;
+}
+
+.two.col {
+  width: 13.3333333333%;
+}
+
+.three.col {
+  width: 22%;
+}
+
+.four.col {
+  width: 30.6666666667%;
+}
+
+.five.col {
+  width: 39.3333333333%;
+}
+
+.six.col {
+  width: 48%;
+}
+
+.seven.col {
+  width: 56.6666666667%;
+}
+
+.eight.col {
+  width: 65.3333333333%;
+}
+
+.nine.col {
+  width: 74%;
+}
+
+.ten.col {
+  width: 82.6666666667%;
+}
+
+.eleven.col {
+  width: 91.3333333333%;
+}
+
+.twelve.col {
+  width: 100%;
+  margin: 0;
+}
+
+/* For Relic Browsers */
+.col.last {
+  margin: 0;
+}
+
+/* Mobile Devices */
+@media all and (max-width: 550px) {
+  .one.col, .two.col, .three.col, .four.col, .five.col, .six.col, .seven.col, .eight.col, .nine.col, .ten.col, .eleven.col {
+    float: none;
+    width: 100%;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hr */
+hr {
+  border: 0;
+  height: 1px;
+  background: #EEEEEE;
+  clear: both;
+}
+
+/* Typography */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 7px;
+  background: #FF4136;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  color: #25A197;
+  height: 50px;
+  line-height: 48px;
+  font-size: 1em;
+  padding: 0 40px;
+  background: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background: #001F3F;
+}
+
+.scrolled {
+  background: #000;
+}
+
+header .logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+  position: absolute;
+  top: -10px;
+  font-size: 2rem;
+}
+
+header .mainNav {
+  top: 0px;
+  max-height: 30px;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .openNav {
+  max-height: 300px !important;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+header nav ul a:hover {
+  color: #FF4136;
+}
+
+header .mobileToggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  width: 30px;
+}
+
+header .mobileToggle span {
+  width: 25px;
+  height: 2px;
+  margin-bottom: 6px;
+  background: #ffffff;
+  display: block;
+}
+
+@media only screen and (max-width: 550px) {
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    padding-top: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+
+  header nav ul li:first-child {
+    margin-top: 70px;
+  }
+
+  header .mobileToggle {
+    display: block;
+  }
+}
+/* Hero One */
+#hero {
+  background: #001F3F;
+  padding: 200px 0 120px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  text-align: center;
+  font-size: 4.6em;
+  text-transform: capitalize;
+  margin-top: 0;
+  line-height: 1;
+  color: #FF4136;
+  font-weight: 300;
+}
+
+#hero h2:after {
+  display: none;
+}
+
+#hero p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#hero .button {
+  border: 0;
+  color: #fff;
+  height: 50px;
+  line-height: 48px;
+  font-size: 0.9rem;
+  padding: 0 40px;
+  background: #FF4136;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#hero .white {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media all and (max-width: 550px) {
+  #hero button {
+    margin-bottom: 20px;
+  }
+
+  #hero h2 {
+    font-size: 2.2em;
+  }
+
+  #hero p {
+    font-size: 0.8em;
+    line-height: 21px;
+    width: 100%;
+  }
+}
+/* About Section */
+#about {
+  background: #FFFFFF;
+  padding: 120px 0;
+}
+
+#about .icon {
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+/* Work Section */
+#team {
+  background: #F4F4F4;
+  padding: 120px 0;
+  cursor: pointer;
+}
+
+#team .team {
+  position: relative;
+}
+
+#team .team p {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+#team .team h4 {
+  color: #FF4136;
+}
+
+#team .team-overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+#team .team .team-overlay {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+#team .team:hover .team-overlay {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+#team .team {
+  transition: all 0.4s ease-in-out;
+}
+
+#team .team:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#work .work img {
+  display: block;
+}
+
+/* Services Section */
+#services {
+  background: #FFFFFF;
+  padding: 120px 0;
+}
+
+.progressBar {
+  margin-bottom: 26px;
+  margin-bottom: 1.66em;
+}
+
+.progressBar h4 {
+  margin-bottom: 7px;
+  margin-bottom: 0.33em;
+  font-size: 1rem;
+}
+
+.progressBarContainer {
+  width: 100%;
+  height: 8px;
+  background: #E1E1E1;
+  overflow: hidden;
+}
+
+.progressBarValue {
+  height: 8px;
+  float: left;
+  background: #FF4136;
+}
+
+.value-00 {
+  width: 0;
+}
+
+.value-10 {
+  width: 10%;
+}
+
+.value-20 {
+  width: 20%;
+}
+
+.value-30 {
+  width: 30%;
+}
+
+.value-40 {
+  width: 40%;
+}
+
+.value-50 {
+  width: 50%;
+}
+
+.value-60 {
+  width: 60%;
+}
+
+.value-70 {
+  width: 70%;
+}
+
+.value-80 {
+  width: 80%;
+}
+
+.value-90 {
+  width: 90%;
+}
+
+.value-100 {
+  width: 100%;
+}
+
+/* Pricing Section */
+#pricing {
+  background: #F4F4F4;
+  padding: 120px 0;
+}
+
+#pricing .card {
+  position: relative;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  transition: all 300ms ease-out;
+}
+
+#pricing .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#pricing .card h3 {
+  text-transform: uppercase;
+  color: #cccccc;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+#pricing .card h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FF4136;
+  font-size: 4em;
+  margin: 0;
+}
+
+#pricing .card p {
+  margin: 10px 0;
+}
+
+#pricing .grey {
+  color: #CCCCCC;
+  text-decoration: line-through;
+}
+
+#pricing .month {
+  font-size: 20px;
+  color: #001F3F;
+}
+
+#pricing .card button {
+  border: 0;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 48px;
+  font-size: 1em;
+  padding: 0 40px;
+  background: #001F3F;
+  margin-top: 10px;
+}
+
+@media all and (max-width: 550px) {
+  #pricing .card {
+    margin: 40px 0;
+  }
+}
+/*Contact Section */
+#contact {
+  background: #FFFFFF;
+  padding: 120px 0;
+  min-height: 400px;
+}
+
+#contact textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background: #F4F4F4;
+  color: #525252;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+#contact input {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #F4F4F4;
+  color: #525252;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+#contact input[type=submit], textarea[type=submit] {
+  border: 0;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 48px;
+  font-size: 1em;
+  padding: 0 40px;
+  background: #FF4136;
+  margin-top: 10px;
+  width: auto;
+}
+
+#contact input::placeholder, textarea::placeholder {
+  color: #525252;
+}
+
+#contact input.error, textarea.error {
+  background: #AD4747;
+  color: #fff;
+}
+
+#contact input.error::placeholder, textarea.error::placeholder {
+  color: black;
+}
+
+#contact textarea {
+  height: 10rem;
+}
+
+/* Footer One */
+footer {
+  background: #2A2C2B;
+  padding: 120px 0;
+}
+
+footer a {
+  color: #FFFFFF;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: #FF4136;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  padding-right: 25px;
+  font-weight: 500;
+}
+
+footer p {
+  color: #888888;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 130px;
+}
+
+footer h2:after {
+  display: none;
+}
+
+footer hr {
+  border-top: 3px solid #ffffff;
+  margin: 20px 0 20px 0;
+}
+
+@media all and (max-width: 550px) {
+  footer ul li {
+    display: block;
+  }
+}
+/* Misc */
+.center {
+  text-align: center;
+}
+
+.padDown {
+  padding-bottom: 50px;
+}
+
+#redblocks > * {
+  transform: translate3d(160px, -93px, 0);
+  animation: moveblocks 4s 1s ease infinite;
+}
+
+@keyframes moveblocks {
+  0% {
+    transform: translate3d(160px, -93px, 0);
+  }
+  50%, 100% {
+    transform: translate(0);
+  }
+}
+#firstBlock {
+  transform: translate3d(160px, -93px, 0);
+  animation: firstBlock 4s 1s ease infinite;
+}
+
+#blockdis {
+  animation: blockdis 4s 1s ease infinite;
+}
+
+@keyframes blockdis {
+  30% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+    transform: translate3d(-160px, 93px, 0);
+  }
+}
+@keyframes firstBlock {
+  0%, 15% {
+    opacity: 0;
+  }
+  40%, 100% {
+    opacity: 1;
+  }
+}
+#redblocksparticles g:nth-child(1) polygon {
+  opacity: 0.35;
+  animation: glow 4s 1s ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) polygon {
+  opacity: 0.35;
+  animation: glow 4s 1s ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) polygon {
+  opacity: 0.35;
+  animation: glow 4s 1s ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) polygon {
+  opacity: 0.35;
+  animation: glow 4s 1s ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(1) {
+  animation: dots 4s 1050ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(1) {
+  animation: dots 4s 1050ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(1) {
+  animation: dots 4s 1050ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(1) {
+  animation: dots 4s 1050ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(2) {
+  animation: dots 4s 1100ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(2) {
+  animation: dots 4s 1100ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(2) {
+  animation: dots 4s 1100ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(2) {
+  animation: dots 4s 1100ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(3) {
+  animation: dots 4s 1150ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(3) {
+  animation: dots 4s 1150ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(3) {
+  animation: dots 4s 1150ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(3) {
+  animation: dots 4s 1150ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(4) {
+  animation: dots 4s 1200ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(4) {
+  animation: dots 4s 1200ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(4) {
+  animation: dots 4s 1200ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(4) {
+  animation: dots 4s 1200ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(5) {
+  animation: dots 4s 1250ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(5) {
+  animation: dots 4s 1250ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(5) {
+  animation: dots 4s 1250ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(5) {
+  animation: dots 4s 1250ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(6) {
+  animation: dots 4s 1300ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(6) {
+  animation: dots 4s 1300ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(6) {
+  animation: dots 4s 1300ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(6) {
+  animation: dots 4s 1300ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(7) {
+  animation: dots 4s 1350ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(7) {
+  animation: dots 4s 1350ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(7) {
+  animation: dots 4s 1350ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(7) {
+  animation: dots 4s 1350ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(8) {
+  animation: dots 4s 1400ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(8) {
+  animation: dots 4s 1400ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(8) {
+  animation: dots 4s 1400ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(8) {
+  animation: dots 4s 1400ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(9) {
+  animation: dots 4s 1450ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(9) {
+  animation: dots 4s 1450ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(9) {
+  animation: dots 4s 1450ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(9) {
+  animation: dots 4s 1450ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(10) {
+  animation: dots 4s 1500ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(10) {
+  animation: dots 4s 1500ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(10) {
+  animation: dots 4s 1500ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(10) {
+  animation: dots 4s 1500ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(11) {
+  animation: dots 4s 1550ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(11) {
+  animation: dots 4s 1550ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(11) {
+  animation: dots 4s 1550ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(11) {
+  animation: dots 4s 1550ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(12) {
+  animation: dots 4s 1600ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(12) {
+  animation: dots 4s 1600ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(12) {
+  animation: dots 4s 1600ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(12) {
+  animation: dots 4s 1600ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(13) {
+  animation: dots 4s 1650ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(13) {
+  animation: dots 4s 1650ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(13) {
+  animation: dots 4s 1650ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(13) {
+  animation: dots 4s 1650ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(14) {
+  animation: dots 4s 1700ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(14) {
+  animation: dots 4s 1700ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(14) {
+  animation: dots 4s 1700ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(14) {
+  animation: dots 4s 1700ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(15) {
+  animation: dots 4s 1750ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(15) {
+  animation: dots 4s 1750ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(15) {
+  animation: dots 4s 1750ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(15) {
+  animation: dots 4s 1750ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(16) {
+  animation: dots 4s 1800ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(16) {
+  animation: dots 4s 1800ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(16) {
+  animation: dots 4s 1800ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(16) {
+  animation: dots 4s 1800ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(17) {
+  animation: dots 4s 1850ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(17) {
+  animation: dots 4s 1850ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(17) {
+  animation: dots 4s 1850ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(17) {
+  animation: dots 4s 1850ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(18) {
+  animation: dots 4s 1900ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(18) {
+  animation: dots 4s 1900ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(18) {
+  animation: dots 4s 1900ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(18) {
+  animation: dots 4s 1900ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(1) g circle:nth-child(19) {
+  animation: dots 4s 1950ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(2) g circle:nth-child(19) {
+  animation: dots 4s 1950ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(3) g circle:nth-child(19) {
+  animation: dots 4s 1950ms ease infinite;
+}
+
+#redblocksparticles g:nth-child(4) g circle:nth-child(19) {
+  animation: dots 4s 1950ms ease infinite;
+}
+
+@keyframes glow {
+  0%, 45% {
+    opacity: 0;
+  }
+  60%, 100% {
+    opacity: 0.35;
+  }
+}
+@keyframes dots {
+  0%, 35% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  60%, 80% {
+    transform: translate(55px, -35px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(55px, -35px);
+    opacity: 0;
+  }
+}
+#purplebg > :nth-child(1) {
+  animation: up 2s 500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(2) {
+  animation: up 2s 1000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(3) {
+  animation: up 2s 1500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(4) {
+  animation: up 2s 2000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(5) {
+  animation: up 2s 2500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(6) {
+  animation: up 2s 3000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(7) {
+  animation: up 2s 3500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(8) {
+  animation: up 2s 4000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(9) {
+  animation: up 2s 4500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(10) {
+  animation: up 2s 5000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(11) {
+  animation: up 2s 5500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(12) {
+  animation: up 2s 6000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(13) {
+  animation: up 2s 6500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(14) {
+  animation: up 2s 7000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(15) {
+  animation: up 2s 7500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(16) {
+  animation: up 2s 8000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(17) {
+  animation: up 2s 8500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(18) {
+  animation: up 2s 9000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(19) {
+  animation: up 2s 9500ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(20) {
+  animation: up 2s 10000ms ease infinite alternate;
+}
+
+#purplebg > :nth-child(21) {
+  animation: up 2s 10500ms ease infinite alternate;
+}
+
+@keyframes up {
+  to {
+    transform: translate(0, -25px);
+  }
+}
+#bottomparticles > :nth-child(1) {
+  animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(1) {
+  animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(1) {
+  animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(2) {
+  animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(2) {
+  animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(2) {
+  animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(3) {
+  animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(3) {
+  animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(3) {
+  animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(4) {
+  animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(4) {
+  animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(4) {
+  animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(5) {
+  animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(5) {
+  animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(5) {
+  animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(6) {
+  animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(6) {
+  animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(6) {
+  animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(7) {
+  animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(7) {
+  animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(7) {
+  animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(8) {
+  animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(8) {
+  animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(8) {
+  animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(9) {
+  animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(9) {
+  animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(9) {
+  animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(10) {
+  animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(10) {
+  animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(10) {
+  animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(11) {
+  animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(11) {
+  animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(11) {
+  animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles > :nth-child(12) {
+  animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#bottomparticles2 > :nth-child(12) {
+  animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+#redglowparticles > :nth-child(12) {
+  animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+
+@keyframes p {
+  85%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes particles {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(10px, 15px);
+  }
+}
+.particlespoly {
+  animation: p 2s ease infinite alternate;
+}
+
+#d-app g:nth-child(1) {
+  animation: updown 2s 200ms ease-in-out infinite alternate;
+}
+
+#d-app g:nth-child(2) {
+  animation: updown 2s 400ms ease-in-out infinite alternate;
+}
+
+#d-app g:nth-child(3) {
+  animation: updown 2s 600ms ease-in-out infinite alternate;
+}
+
+#d-apps2 g:nth-child(1) {
+  animation: updown 2s 200ms ease-in-out infinite alternate;
+}
+
+#d-apps2 g:nth-child(2) {
+  animation: updown 2s 400ms ease-in-out infinite alternate;
+}
+
+#d-apps2 g:nth-child(3) {
+  animation: updown 2s 600ms ease-in-out infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(1) {
+  animation: updown 2s 50ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(2) {
+  animation: updown 2s 100ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(3) {
+  animation: updown 2s 150ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(4) {
+  animation: updown 2s 200ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(5) {
+  animation: updown 2s 250ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(6) {
+  animation: updown 2s 300ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(7) {
+  animation: updown 2s 350ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(8) {
+  animation: updown 2s 400ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(9) {
+  animation: updown 2s 450ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(10) {
+  animation: updown 2s 500ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(11) {
+  animation: updown 2s 550ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(12) {
+  animation: updown 2s 600ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(13) {
+  animation: updown 2s 650ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(14) {
+  animation: updown 2s 700ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(15) {
+  animation: updown 2s 750ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(16) {
+  animation: updown 2s 800ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(17) {
+  animation: updown 2s 850ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(18) {
+  animation: updown 2s 900ms ease infinite alternate;
+}
+
+#d-apps2wrapper g:nth-child(3) g > circle:nth-child(19) {
+  animation: updown 2s 950ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(1) {
+  animation: updown 2s 50ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(2) {
+  animation: updown 2s 100ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(3) {
+  animation: updown 2s 150ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(4) {
+  animation: updown 2s 200ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(5) {
+  animation: updown 2s 250ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(6) {
+  animation: updown 2s 300ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(7) {
+  animation: updown 2s 350ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(8) {
+  animation: updown 2s 400ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(9) {
+  animation: updown 2s 450ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(10) {
+  animation: updown 2s 500ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(11) {
+  animation: updown 2s 550ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(12) {
+  animation: updown 2s 600ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(13) {
+  animation: updown 2s 650ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(14) {
+  animation: updown 2s 700ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(15) {
+  animation: updown 2s 750ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(16) {
+  animation: updown 2s 800ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(17) {
+  animation: updown 2s 850ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(18) {
+  animation: updown 2s 900ms ease infinite alternate;
+}
+
+#d-appswrapper g:nth-child(2) g > circle:nth-child(19) {
+  animation: updown 2s 950ms ease infinite alternate;
+}
+
+@keyframes updown {
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+#Layer_1 > g:nth-child(2) > g:nth-child(18) > g:nth-child(12) {
+  animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}
+
+@keyframes arrows {
+  to {
+    transform: translate(25px, 25px);
+  }
+}
+#Layer_1 > g:nth-child(2) > g:nth-child(17) > g:nth-child(13) {
+  animation: arrows2 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}
+
+@keyframes arrows2 {
+  to {
+    transform: translate(-25px, -25px);
+  }
+}
+#Layer_1 > g:nth-child(2) > g:nth-child(17) > g:nth-child(12) {
+  animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}

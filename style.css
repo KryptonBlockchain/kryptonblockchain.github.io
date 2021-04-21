@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 /* Global Styles */
+.fucknames {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
   font-size: 1rem;
   line-height: 1.5;

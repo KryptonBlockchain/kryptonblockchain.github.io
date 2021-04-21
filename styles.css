@@ -130,7 +130,7 @@ span.new {
 }
   section .title span:last-child {
     font-size: 1rem;
-    animation: byBottom 1s 0.25s ease both;
+    animation: byBottom 1s 4.25s ease both;
   }
   section .title span {
     display: inline-block;
@@ -217,7 +217,7 @@ nav li:nth-child(1) {
     color: #efefef;
     width: 100%;
     text-transform: uppercase;
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     animation: byBottom 1s ease both;
     font-weight: 600;
     letter-spacing: 0.25vw;

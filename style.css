@@ -549,7 +549,7 @@ header .mobileToggle span {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-#earning .card h3 {
+#earning .card h1 {
   font-weight: 700;
   text-transform: uppercase;
   color: #FF4136;
@@ -695,7 +695,7 @@ footer p {
   margin: 0;
 }
 
-footer h2 {
+footer h1 {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 0;
@@ -704,7 +704,7 @@ footer h2 {
   width: 130px;
 }
 
-footer h2:after {
+footer h1:after {
   display: none;
 }
 
